@@ -46,8 +46,8 @@ class Player:
             print("Said surma... Mäng läbi.")
 
     def status(self, day, max_days):
-        print(f"\n📅 Päev {day}/{max_days}")
-        print(f"❤️ HP: {self.hp}, ⚡ Energia: {self.energy}, 🍞 Toit: {self.food}")
+        print(f"\n Päev {day}/{max_days}")
+        print(f" HP: {self.hp}, Energia: {self.energy}, Toit: {self.food}")
 
 # 🕹️ Mängu algus
 def game_loop():
