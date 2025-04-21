@@ -49,13 +49,13 @@ class Player:
         print(f"\n Päev {day}/{max_days}")
         print(f" HP: {self.hp}, Energia: {self.energy}, Toit: {self.food}")
 
-# 🕹️ Mängu algus
+# Mängu algus
 def game_loop():
     player = Player(hp=10, energy=5, food=3)
     total_days = 7
     current_day = 1
 
-    print("🎮 Tere tulemast ellujäämismängu: Sundöö")
+    print(" Tere tulemast ellujäämismängu: Sundöö")
     print("Eesmärk: Ela üle 7 päeva, hallates ressursse ja vältides ohte!\n")
 
     while player.alive and current_day <= total_days:
@@ -80,9 +80,9 @@ def game_loop():
         time.sleep(1)
 
     if player.alive:
-        print("\n🎉 Palju õnne! Elasid Sundöö üle!")
+        print("\n Palju õnne! Elasid Sundöö üle!")
     else:
-        print("\n☠️ Kahjuks sa ei ellu jäänud.")
+        print("\n Kahjuks sa ei ellu jäänud.")
 
 # Käivita mäng
 if __name__ == "__main__":
